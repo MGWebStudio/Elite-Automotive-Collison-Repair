@@ -389,7 +389,7 @@
   .filebtn{display:flex;align-items:center;gap:11px;background:var(--bg);border:1px dashed var(--line-2);border-radius:11px;padding:14px 15px;color:var(--muted);font-size:14px;transition:border-color .25s}
   .filewrap:hover .filebtn{border-color:var(--silver)}
   .filebtn svg{width:20px;height:20px;color:var(--accent-2);flex-shrink:0}
-  .form .btn{width:100%;margin-top:8px}
+  .form .btn{width:100%;margin-top:8px;white-space:normal}
   .form .fine{margin-top:14px;font-size:12px;color:var(--muted-2);text-align:center}
   .two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
   .form-success{display:none;text-align:center;padding:30px 10px}
@@ -398,6 +398,14 @@
   .form-success p{color:var(--muted);font-size:15px}
   .form-error-banner{display:none;background:rgba(255,77,79,.12);border:1px solid rgba(255,77,79,.45);color:#ffb4b8;border-radius:11px;padding:13px 16px;font-size:13.5px;margin-bottom:20px}
   @media(max-width:880px){.quote-wrap{grid-template-columns:1fr;gap:40px}}
+  /* Phone refinements (patches mobile gaps; keeps existing breakpoint values) */
+  @media(max-width:600px){
+    .section{padding:64px 0}
+    .section-head{margin-bottom:44px}
+    .two{grid-template-columns:1fr}
+    .form{padding:26px 22px}
+    .field input,.field select,.field textarea{font-size:16px}
+  }
 
   /* Footer */
   footer{background:var(--bg-2);border-top:1px solid var(--line);padding:70px 0 32px}
